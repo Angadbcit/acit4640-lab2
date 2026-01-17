@@ -1,6 +1,6 @@
 #!/bin/bash
 # uses ssh key to connect as admin to our ec2 instance, overwrites default nginx html file
-ssh -i ${SSH_LAB} -T ${IP_LAB}@${IP_LAB} "sudo tee -a /var/www/html/index.html" << EOF
+ssh -i ${SSH_LAB} -T ${USERNAME_LAB}@${IP_LAB} "sudo tee -a /var/www/html/index.html" << EOF
 <!DOCTYPE html>
 <html lang='en'>
 <head>

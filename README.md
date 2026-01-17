@@ -8,15 +8,21 @@ Contains 3 environment variables that are utilized in the scripts to setup nginx
 
 `./variables.sh`
 
-![environment variables](acit4640-lab2\screenshots\image2.png)
+![environment variables](.\screenshots\image2.png)
 
 ## nginx-install.sh
 
 Installs and enables the nginx service using a heredoc ssh connection with the ec2 instances.
 
+`./nginx-install.sh`
+
+![environment variables](.\screenshots\image3.png)
+![environment variables](.\screenshots\image4.png)
+
 ## document-write.sh
 
+Connects via SSH and overwrites default html file on our nginx server using Heredoc. Uses command substitution to insert today's date from our development machine.
 
-## Environmental Variables
+`./document-write.sh`
 
-We run the variables.sh file creates the username, IP address, and shh key file location environmental variable for the scripts as follows:
+![environment variables](.\screenshots\image.png)
